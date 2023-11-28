@@ -9,5 +9,7 @@ if number > 5:
     print("{}{} is {} and is greater than 5".format(str_last, number, sn[-1]))
 elif number < 6 and last_num != 0:
     print("{}{} is -{}{}".format(str_last, number, sn[-1], str_six))
-else:
+elif number == 0:
     print("{}{} is {} and is 0".format(str_last, number, sn[-1]))
+else:
+    raise TypeError
