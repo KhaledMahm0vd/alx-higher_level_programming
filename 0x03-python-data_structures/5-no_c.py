@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def no_c(my_string):
+    new_string = ""
     for i in range(len(my_string)):
-        if my_string[i] == 'C' or my_string[i] == 'c':
-            print(my_string[:i]+""+my_string[i+1:])
-        else:
-            print(my_string)
-        return 0
+        if (ord(my_string[i]) == 67 or ord(my_string[i]) == 99):
+            continue
+        new_string += my_string[i]
+    return new_string
